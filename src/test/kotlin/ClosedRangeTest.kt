@@ -27,7 +27,7 @@ class ClosedRangeTest {
         @Test
         fun lowerEndpointがupperEndpointより大きい場合は生成できない() {
             shouldThrow<IllegalArgumentException> {
-                val sample = ClosedRange(8,3)
+                ClosedRange(8,3)
             }
         }
     }
